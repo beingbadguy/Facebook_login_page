@@ -1,0 +1,356 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 700px;
+    background-color: #f0f2f5;
+
+}
+
+.left h1{
+    margin-top: -20px;
+    font-weight: 400;
+}
+
+.left p{
+    color: grey;
+    margin-top: 5px;
+}
+.loginbox{
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    left: -35px;
+    
+}
+.account1 , .account2{
+    border: 1px solid rgba(0.1, 0, 0, 0.1);
+    height: 220px;
+    width: 150px;
+    margin-left: 40px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;;
+}
+.account1:hover{
+    box-shadow: 0.1px 0.1px .1px 5px rgba(0.1, 0, 0, 0.1)   , -0.1px -0.1px .1px 5px rgba(0.1, 0, 0, 0.1)  ;
+    transition: all .4s ease;
+
+}
+.account2:hover{
+    box-shadow: 0.1px 0.1px .1px 5px rgba(0.1, 0, 0, 0.1)   , -0.1px -0.1px .1px 5px rgba(0.1, 0, 0, 0.1)  ;
+    transition: all .4s ease;
+
+}
+.account2 img{
+    height: 50px;
+    position: relative;
+    top: 70px;
+    left: 45px;
+}
+.account2 h4{
+    margin-top: 120px;
+    text-align: center;
+}
+.account2 a{
+   text-decoration: none;
+}
+
+
+#cross{
+    position: relative;
+    top: 1px;
+    height: 23px;
+    width: 23px;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+
+
+.hover p{
+    margin-left: 5px;
+    color: white;
+    font-size: 12px;
+}
+.account1 img{
+    border-radius: 20px;
+    height:150px ;
+    width: 140px;
+    position: relative;
+    top: -21px;
+    margin-left:4px;
+}
+.account1 h4{
+    text-align: center;
+    color: grey;
+}
+
+
+.login{
+    position: relative;
+    margin-top: 120px;
+    height: 350px;
+    width: 400px;
+    background-color: #fff;
+    border-radius:20px;
+    box-shadow: 0.1px 0.1px 4px .9px rgba(0.1, 0, 0, 0.1)   , -0.1px -0.1px 4px 0.9px rgba(0.1, 0, 0, 0.1)  ;
+}
+
+hr{
+    display: flex;
+    width: 90%;
+    position: relative;
+    top: 30px;
+   margin: auto ;
+}
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+form input{
+    border-radius: 5px;
+    font-size: 17px;
+    color: grey;
+    padding: 20px;
+    padding-top: 25px;
+    border: 1px solid rgba(0.1, 0, 0, 0.1);   
+    height: 20px;
+    width: 350px;
+    margin-top: 15px;
+
+}
+input[type=text]:focus{
+    outline: none;
+    border: 2px solid #1778F2;
+}
+
+#login_button{
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+        color: grey;
+        border: 1px solid grey;   
+        height: 45px;
+        width: 350px;
+        margin-top: 15px;
+        background-color: #1778F2;
+        color: white;
+}
+#forget_password{
+    color: #1778F2;
+}
+#forget_password:hover{
+    color: #1778F2;
+    text-decoration: underline;
+}
+
+
+#create_account{
+    margin-top: 60px;
+    height: 45px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    background-color: #42B72A;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#create_account:hover{
+    background-color: #42B72A;
+    filter:contrast(85%);
+
+}
+#create_account a{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    z-index: 1;
+}
+.right p{
+    text-align: center;
+    margin-top: 40px;
+}
+strong{
+    cursor: pointer;
+}
+.language{
+    margin-left: 120px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.language p{
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 80px;
+}
+
+ .others p{
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-right: 400px;
+    margin-top: 40px;
+ }
+
+
+
+ @media screen and (max-width: 1310px){
+    footer{
+        text-align: left;
+        margin-left: -50px;
+    }
+ }
+
+ @media screen and (max-width: 1110px){
+    .left{
+        margin-left: 100px;
+    }
+    .right{
+        margin-right: 100px;
+    }
+    footer{
+        text-align: left;
+        margin-left: -80px;
+        margin-right: 0px;
+    }
+ }
+
+
+
+ @media screen  and (max-width: 975px){
+    .left{
+        margin-left: 100px;
+    }
+    .right{
+        margin-right: 100px;
+    }
+    footer{
+        margin-left: -100px;
+    }
+ }
+
+
+ @media screen and (max-width: 930px){
+    .left{
+        margin-left: 150px;
+    }
+    .right{
+        margin-right: 100px;
+    }
+    footer{
+        text-align: left;
+        margin-left: -80px;
+    }
+ }
+  @media screen and  ( min-width: 790px) and (max-width: 870px){
+    .left{
+        margin-left: 80px;
+    }
+    .right{
+        margin-right: 80px;
+    }
+    footer{
+        margin-left: -130px;
+    }
+ }
+
+ @media screen and (max-width:790px){
+    .container{
+        display:block;
+        height: 1000px;
+    }
+
+
+    .account1, .account2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .left, .right{
+
+        
+        margin-right: 150px
+     }
+     .left{
+        margin-left: 200px ;
+     }
+     .right{
+        margin-top: -30px;
+        margin-left: 120px ; 
+        display: block;
+     }
+     
+ 
+
+     footer{
+        margin-left:-100px;
+     }
+ 
+     .others p{
+        margin-right: 40px;
+     }
+ }
+
+
+ @media screen and (max-width:600px){
+
+    .account1, .account2{
+        margin-left: 20px;
+       width: 100px;
+       margin-right: 20px;
+    }
+
+    .right{
+        margin-left: 120px;
+    }
+    .right p{
+        margin-left: 50px;
+        font-size: 12px;
+    }
+  
+    .language p{
+        margin-right: 50px;
+    }
+ }
+
+ @media screen and (max-width:660px){
+    .account1, .account2{
+        width: 200px;
+        height: 150px;
+    }
+    .account1{
+        margin-right: 20px;
+    }
+    .account2{
+        margin-right: 20px;
+    }
+    .hover img{
+        margin-top: -20px;
+    }
+    .account2 a{
+        position:relative;
+        top: -10px;  
+    }
+  
+    #profile{
+        /* margin-top: -0px; */
+        width: 100px;
+        height: 130px;
+        margin-left: 15px;
+    }
+ }
